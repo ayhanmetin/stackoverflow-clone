@@ -9,7 +9,8 @@ const Header = () => {
     <div>
       <img src="" alt="logo" />
       <Navigation />
-      <SearchInput />
+      {/* width is for a test purpose */}
+      <SearchInput style={{ width: 500 }} placeholder="Search..." />
       <Button>Log in</Button>
       <Button>Sign up</Button>
     </div>
