@@ -15,7 +15,3 @@ const Button = (
 
 
 export default Button;
-/**
- * git add .
- * git commit -m " 
- */
