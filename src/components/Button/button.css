@@ -1,0 +1,32 @@
+button {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  padding: 6px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:first-of-type {
+  background-color: #B3D3EA;
+  color: #587E9A;
+}
+
+button:first-of-type:hover {
+  background-color: #94abbc;
+}
+
+button:last-of-type {
+  background-color: #0074CC;
+  color: white;
+}
+
+button:last-of-type:hover {
+  background-color: #084f85;
+}
