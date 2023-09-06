@@ -8,9 +8,10 @@ import "./header.css"
 const Header = () => {
   return (
     <div className="header-wrapper">
+      {/* TODO: Need to change from img to the Image component in nextjs for the better performance */}
       <img className="logoPng" src="/logo/stackLogo.png" alt="logo" />
       <Navigation />
-      <SearchInput placeholder="Search..." />
+      <SearchInput placeholder="Search..." containerStyle={{flex: 1}} />
       <div className="auth-buttons">
       <Button>Log in</Button>
       <Button>Sign up</Button>

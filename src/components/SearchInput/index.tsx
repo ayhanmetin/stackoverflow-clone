@@ -5,9 +5,11 @@ import Button from "../Button";
 import Link from "../Link";
 import React, { useEffect, useState } from "react";
 
-type SearchInputProps = React.HTMLAttributes<
+interface SearchInputProps extends React.HTMLAttributes<
   Omit<HTMLInputElement, "type" | "onClick">
->;
+>{
+  containerStyle?: React.CSSProperties;
+}
 
 const SearchDropdown = () => {
   const guideItems: {
@@ -66,7 +68,7 @@ const SearchDropdown = () => {
   );
 };
 
-const SearchInput = (props: SearchInputProps) => {
+const SearchInput = ({ containerStyle, ...props }: SearchInputProps) => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
   const showDropdown = () => setDropdownVisible(true);
@@ -84,7 +86,7 @@ const SearchInput = (props: SearchInputProps) => {
   }, []);
 
   return (
-    <div className={styles["search-container"]} onClick={stopPropagation}>
+    <div className={styles["search-container"]} style={containerStyle} onClick={stopPropagation}>
       <div className={styles["search-input-wrapper"]}>
         <Image alt="search" width={18} height={18} src="/icons/search.svg" />
         <input onClick={showDropdown} type="text" {...props} />

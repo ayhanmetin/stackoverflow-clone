@@ -1,6 +1,6 @@
 .search-container {
   position: relative;
-  max-width: fit-content;
+  width: fit-content;
 }
 
 .search-input-wrapper {
@@ -16,6 +16,7 @@
 
 .search-input-wrapper > input {
   all: unset;
+  width: 100%;
   padding: 8px 9px 8px 32px;
   border: 1px solid #babfc4;
   background-color: white;
