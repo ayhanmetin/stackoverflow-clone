@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid black;
+  width: 45rem; 
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  /* background-color: ; */
+}
+
+.answers {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.filter {
+  background-color: #28a745; /* A different color for the filter button */
+}
+
+.filter:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,14 @@
+.questions-page {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  height: 100%;
+  background-color: white;
+}
+
+.questions-page > aside:first-child {
+  border-right: 1px solid #ececec;
+}
+
+.questions-page > aside:last-child {
+  border-left: 1px solid #ececec;
+}

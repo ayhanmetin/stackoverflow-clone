@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import Navigation from "@/components/Navigation";
 import SearchInput from "@/components/SearchInput";
 import "./header.css"
-
+import Questions from "@/components/Questions";
 const Header = () => {
   return (
     <div className="header-wrapper">
