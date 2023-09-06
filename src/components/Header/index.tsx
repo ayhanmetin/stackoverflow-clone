@@ -3,16 +3,18 @@
 import Button from "@/components/Button";
 import Navigation from "@/components/Navigation";
 import SearchInput from "@/components/SearchInput";
+import "./header.css"
 
 const Header = () => {
   return (
-    <div>
-      <img src="" alt="logo" />
+    <div className="header-wrapper">
+      <img className="logoPng" src="/logo/stackLogo.png" alt="logo" />
       <Navigation />
-      {/* width is for a test purpose */}
-      <SearchInput style={{ width: 500 }} placeholder="Search..." />
+      <SearchInput placeholder="Search..." />
+      <div className="auth-buttons">
       <Button>Log in</Button>
       <Button>Sign up</Button>
+      </div>
     </div>
   );
 };

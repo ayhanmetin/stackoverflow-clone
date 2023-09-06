@@ -1,7 +1,9 @@
 "use client";
 
 import "./navigation.css"
+
 const Navigation = () => {
+
   return (
     <ul className="wrapper-buttons">
       <li className="buttons">

@@ -5,9 +5,7 @@
 import "./button.css"
 import React from "react";
 
-const Button = (
-  props
-) => {
+const Button = (props) => {
 
 
   return <button {...props} />;
